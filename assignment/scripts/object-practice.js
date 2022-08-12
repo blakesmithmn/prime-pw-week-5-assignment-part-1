@@ -16,7 +16,10 @@ const me = {
   shoeCount: 4,
   favThreeFoods: ['Sushi', 'Pizza', 'Mangoes']
 };
-console.log('A little about me:', me);
+console.log('A little about me:');
+console.log('My name is:', me.firstName);
+console.log('I have', me.hasSiblings, 'siblings');
+console.log('Some of my favorite foods are:', me.favThreeFoods);
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -26,7 +29,7 @@ console.log('A little about me:', me);
 */
 
 let fullName = me.firstName + ' ' + me.lastName;
-console.log(fullName);
+console.log('My full name is:', fullName);
 
 
 
@@ -35,8 +38,8 @@ console.log(fullName);
   - Console.log your last favorite food 
 */
 
-console.log(me.favThreeFoods[0]);
-console.log(me.favThreeFoods[2]);
+console.log('My first favorite food is:', me.favThreeFoods[0]);
+console.log('My last favorite food is:', me.favThreeFoods[2]);
 
 
 
@@ -48,7 +51,7 @@ console.log(me.favThreeFoods[2]);
 */
 
 me.shoeCount = me.shoeCount + 1;
-console.log(me.shoeCount);
+console.log('I have', me.shoeCount, 'pairs of shoes now');
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
